@@ -116,12 +116,12 @@ a:not(.btn) {
     opacity: .5;
 }
 
-.login-card input[type="text"].focus {
+.login-card input[type="text"] .focus {
     outline: none;
     border-color: #00acee;
 }
 
-.login-card input[type="input"].focus ~ span {
+.login-card input[type="input"] .focus ~ span {
     color: #00acee;
     font-size: 13px;
     transform: translateY(-15px);
