@@ -43,7 +43,7 @@ a:not(.btn) {
 
 .login-card h1 {
     font-size: 2rem;
-    margin-bottom: .17rem;
+    margin-bottom: 2rem;
     font-weight: 700;
 }
 
@@ -114,4 +114,29 @@ a:not(.btn) {
     transition: all .3s ease;
     padding: 0 .7rem;
     opacity: .5;
+}
+
+.login-card input[type="text"].focus {
+    outline: none;
+    border-color: #00acee;
+}
+
+.login-card input[type="input"].focus ~ span {
+    color: #00acee;
+    font-size: 13px;
+    transform: translateY(-15px);
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-color: black;
+    }
+
+    .login-card-header {
+        position: fixed;
+        inset: 0;
+        bottom: auto;
+        padding: 1rem;
+    }
 }
